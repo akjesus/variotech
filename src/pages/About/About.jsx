@@ -11,8 +11,8 @@ const stats = [
 
 const team = [
   {
-    name: "Jane Doe",
-    role: "Lead Interior Designer",
+    name: "Chigozie Okpechi",
+    role: "Lead Project Manager",
     img: "https://randomuser.me/api/portraits/women/44.jpg",
   },
   {
@@ -93,12 +93,12 @@ const About = () => {
           viewport={{ once: true }}
         >
           <h2 className="text-3xl font-bold mb-4">Our Story</h2>
-          <p className="text-gray-600 leading-relaxed mb-4">
-            Elegance Interiors was founded with a vision to transform ordinary
-            spaces into extraordinary experiences. Our journey began with a
-            passion for design and a commitment to excellence.
+          <p className="text-black leading-relaxed mb-4">
+            <b>Variotech Solutions</b> was founded with a vision to transform
+            ordinary spaces into extraordinary experiences. Our journey began
+            with a passion for design and a commitment to excellence.
           </p>
-          <p className="text-gray-600 leading-relaxed">
+          <p className="text-black leading-relaxed">
             Today, we are proud to have worked with numerous clients, delivering
             unique and inspiring interiors that stand the test of time.
           </p>
@@ -194,13 +194,14 @@ const About = () => {
         >
           Partner with us to create a space that truly reflects your vision.
         </motion.p>
-
-        <motion.button
-          whileHover={{ scale: 1.05 }}
-          className="bg-yellow-600 px-8 py-3 rounded-lg hover:bg-yellow-700"
-        >
-          Contact Us
-        </motion.button>
+        <a href="/contact">
+          <motion.button
+            whileHover={{ scale: 1.05 }}
+            className="bg-[#B34C0D] px-8 py-3 rounded-lg hover:bg-yellow-700"
+          >
+            Contact Us
+          </motion.button>
+        </a>
       </section>
     </div>
   );

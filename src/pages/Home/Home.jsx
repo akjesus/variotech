@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import {
   BookOpen,
@@ -18,8 +19,10 @@ import { X } from "lucide-react";
 import clsx from "clsx";
 import parse from "html-react-parser";
 import moment from "moment";
+import ExperienceSection from "./Experience";
 
 export default function Home() {
+  const Navigate = useNavigate();
   const [open, setOpen] = useState(true);
   const [selectedImage, setSelectedImage] = useState(null);
   const services = [
@@ -46,34 +49,42 @@ export default function Home() {
   ];
 
   return (
-    <div className="pt-0">
+    <div className="bg-gray-50 min-h-screen">
       {/* HERO */}
       <section
         className="h-[90vh] flex items-center bg-cover bg-center"
         style={{
-          backgroundImage:
-            "url('https://images.unsplash.com/photo-1505693416388-ac5ce068fe85')",
+          backgroundImage: "url('/home-hero.jpg')",
         }}
       >
         <div className="bg-black/50 w-full h-full flex items-center">
           <div className="max-w-6xl mx-auto px-6 text-white">
-            <h1 className="text-4xl md:text-6xl font-bold mb-4">
+            <motion.h1
+              initial={{ opacity: 0, y: 40 }}
+              animate={{ opacity: 1, y: 0 }}
+              className="text-4xl md:text-5xl font-bold mb-4"
+            >
               Transforming Spaces into Masterpieces
-            </h1>
+            </motion.h1>
             <p className="mb-6 text-lg">
               Luxury Solutions design for homes and businesses.
             </p>
             <div className="flex gap-4">
-              <button className="bg-yellow-600 px-6 py-3 rounded-lg hover:bg-yellow-700">
-                View Projects
-              </button>
-              <button className="border border-white px-6 py-3 rounded-lg">
-                Contact Us
-              </button>
+              <a href="/portfolio">
+                <button className="bg-[#B34C0D] px-6 py-3 rounded-lg hover:bg-[#9A3B0C]">
+                  View Our Portfolio
+                </button>
+              </a>
+              <a href="/contact">
+                <button className="border border-white px-6 py-3 rounded-lg">
+                  Contact Us
+                </button>
+              </a>
             </div>
           </div>
         </div>
       </section>
+      <ExperienceSection />
       <section className="relative bg-[#330202] text-white">
         <div id="default-carousel" class="relative " data-carousel="slide">
           <div class="relative h-96 overflow-hidden rounded-base md:h-96">
@@ -223,7 +234,7 @@ export default function Home() {
           <div className="mt-12 grid md:grid-cols-3 gap-8">
             {services.map((s, i) => (
               <div className="p-6 bg-white shadow rounded-2xl">
-                <House className="w-12 h-12 text-[#330202] mx-auto" />
+                <House className="w-12 h-12 text-[#B34C0D] mx-auto" />
                 <h3 className="mt-4 text-xl font-semibold">{s.title}</h3>
                 <p className="mt-2 text-[#330202]">{s.desc}</p>
               </div>
@@ -234,7 +245,7 @@ export default function Home() {
 
       {/* GALLERY */}
       <section className="max-w-6xl mx-auto px-6 py-16">
-        <h2 className="text-3xl font-bold mb-8">Featured Projects</h2>
+        <h2 className="text-3xl font-bold mb-8 text-center">Featured Projects</h2>
 
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
           {images.map((img, i) => (
@@ -279,7 +290,7 @@ export default function Home() {
         <p className="mb-6 text-gray-300">
           Let’s create something beautiful together.
         </p>
-        <button className="bg-yellow-600 px-8 py-3 rounded-lg hover:bg-yellow-700">
+        <button className="bg-[#B34C0D] px-8 py-3 rounded-lg hover:bg-[#9A3B0C]">
           Get in Touch
         </button>
       </section>

@@ -10,8 +10,8 @@ export default function Footer() {
               className="w-30 h-10 object-cover rounded-full"
             />
           </div>
-          <p className="mt-3 text-gray-400">
-            Building the future of education with technology and innovation.
+          <p className="mt-3 text-white">
+            Creating spaces that inspire and elevate the human experience.
           </p>
         </div>
         <div>
@@ -23,9 +23,6 @@ export default function Footer() {
               </a>
             </li>
             <li>
-              <a href="/contact" className="hover:text-white">
-                Contact
-              </a>
             </li>
             <li>
               <a href="/portfolio" className="hover:text-white">
@@ -42,13 +39,13 @@ export default function Footer() {
         <div>
           <h3 className="text-lg font-semibold text-white">Contact</h3>
           <p className="mt-3">
-            Along Nsukka - Enugu New Road, Ekwegbe, Enugu State, Nigeria
+            Ikeja, Lagos State, Nigeria
           </p>
           <p>info@variotech.ng</p>
         </div>
       </div>
-      <p className="text-center text-gray-500 mt-8">
-        © {new Date().getFullYear()} Variotech Solutionss. All rights reserved.
+      <p className="text-center text-gray-700 mt-8">
+        © {new Date().getFullYear()} Variotech Solutions. <br />All Rights Reserved.
       </p>
     </footer>
   );

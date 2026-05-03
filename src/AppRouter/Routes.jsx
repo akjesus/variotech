@@ -31,7 +31,7 @@ const AppRoutes = () => {
           <Route path="*" element={<NotFound />} />
         </Routes>
       </main>
-      && <Footer />
+      <Footer />
     </>
   );
 };

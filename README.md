@@ -1,14 +1,12 @@
-# 🎓 Maduka - University/College Website
+# 🎓 Variotech Solutions
 
-Maduka is a **fully responsive university website** built with **React.js + TailwindCSS**.  
-It is designed for universities or colleges to provide students with online admission, course details, contact information, and integrated online fee payment using **Razorpay**.
+Maduka is a **fully responsive interior decore portfolio website** built with **React.js + TailwindCSS**.  
+
 
 ---
 
 ## 🚀 Features
 - 🏠 **Home Page** – Modern landing page with hero section and navigation  
-- 📚 **Courses Page** – Displays all available courses with descriptions, duration, price & teachers  
-- 📝 **Admission Page** – Online admission form with **Razorpay payment gateway** integration  
 - ℹ️ **About Page** – Overview of the institution  
 - 📩 **Contact Page** – Contact form, Google Maps embed, and details  
 - 🌐 **Fully Responsive** – Works on desktop, tablet, and mobile  
@@ -23,7 +21,7 @@ It is designed for universities or colleges to provide students with online admi
 ---
 
 ## 🤝 **Contributing**
-Contributions are welcome!  
+@akjesus 
 Feel free to **open issues** or **submit pull requests** to improve this project.  
 
 ---

@@ -4,7 +4,7 @@ import { useEffect } from "react";
 const TextCarousel = () => {
   const controls = useAnimation();
   const announcement =
-    "Welcome to Variotech Solutionss - Your Trusted Partner in Solutions Design and Renovation Services!";
+    "Welcome to Variotech Solutions - Your Trusted Partner in Solutions Design and Renovation Services!";
 
   // Duplicate the announcement for seamless looping
   const carouselText = `${announcement} • ${announcement} • ${announcement} • ${announcement} • ${announcement}`;
@@ -27,7 +27,7 @@ const TextCarousel = () => {
   }, [controls]);
 
   return (
-    <div className="bg-white text-[#330202] py-4 overflow-hidden">
+    <div className="bg-[#B34C0D] text-white py-4 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 ">
         <motion.div
           animate={controls}

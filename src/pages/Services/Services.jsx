@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Home, Building2, Sofa, Ruler, Hammer, Box, X } from "lucide-react";
+import ProcessSection from "./Processes";
 
 const services = [
   {
@@ -137,6 +138,7 @@ const Services = () => {
           </motion.div>
         )}
       </AnimatePresence>
+      <ProcessSection />
 
       {/* CTA */}
       <section className="bg-black text-white py-20 text-center">
