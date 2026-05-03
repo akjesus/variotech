@@ -17,15 +17,11 @@ const team = [
     img: "/images/chigozie.jpg",
   },
   {
-    name: "Obiageri Ahunwa",
-    role: "Head, Client Services",
-    img: "/images/obiageri.jpg",
+    name: "Otong Akan",
+    role: "Head, ICT Services",
+    img: "/images/akjesus.jpg",
   },
-  {
-    name: "Tochukwu Ahunwa",
-    role: "Financial Controller",
-    img: "/images/tochukwu.jpg",
-  },
+
   {
     name: "Abimbola Rotimi",
     role: "Legal Adviser",
@@ -60,7 +56,7 @@ const About = () => {
   return (
     <div className="bg-gray-50 min-h-screen">
       {/* HERO */}
-      <section className="relative bg-[#330202] text-white py-24">
+      <section className="relative bg-black text-white py-24">
         <div className="max-w-7xl mx-auto px-6 text-center">
           <motion.h1
             initial={{ opacity: 0, y: 40 }}
@@ -85,7 +81,7 @@ const About = () => {
       {/* STORY */}
       <section className="max-w-6xl mx-auto px-6 py-16 grid md:grid-cols-2 gap-10 items-center">
         <motion.img
-          src="https://images.unsplash.com/photo-1492724441997-5dc865305da7"
+          src="/images/about.jpg"
           alt="studio"
           className="rounded-2xl shadow"
           initial={{ opacity: 0, x: -60 }}
@@ -165,7 +161,7 @@ const About = () => {
             We pride ourselves in the expertise of our team many of whom have
             garnered years of working experience in leading companies
           </p>
-          <div className="grid md:grid-cols-4 gap-8">
+          <div className="grid md:grid-cols-3 gap-8">
             {team.map((member, i) => (
               <motion.div
                 key={i}

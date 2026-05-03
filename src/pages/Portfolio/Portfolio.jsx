@@ -126,7 +126,7 @@ const Portfolio = () => {
   return (
     <div className="bg-[#F8F5F0] text-gray-800">
       {/* HERO */}
-      <section className="relative bg-[#330202] text-white py-24">
+      <section className="relative bg-black text-white py-24">
         <div className="max-w-7xl mx-auto px-6 text-center">
           <motion.h1
             initial={{ opacity: 0, y: 40 }}

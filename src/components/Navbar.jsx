@@ -29,7 +29,7 @@ export default function Navbar() {
   }, [location.pathname]);
 
   return (
-    <header className="fixed top-0 w-full bg-[#330202] shadow-md z-50">
+    <header className="fixed top-0 w-full bg-black shadow-md z-50">
       <div className="max-w-7xl mx-auto flex items-center justify-between p-4">
         {/* Logo + Title */}
         <a href="/">
