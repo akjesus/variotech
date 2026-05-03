@@ -2,38 +2,68 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { X, ChevronLeft, ChevronRight } from "lucide-react";
 
-const categories = ["All", "Living Room", "Bedroom", "Office"];
+const categories = ["All", "Living Room", "Bathroom", "Consoles", "Rooms", "Kitchen", "Office"];
 
 const projects = [
   {
     id: 1,
     category: "Living Room",
-    image: "https://images.unsplash.com/photo-1493666438817-866a91353ca9",
+    image: "/gallery/livingroom/1.jpg",
   },
   {
     id: 2,
-    category: "Bedroom",
-    image: "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85",
+    category: "Bathroom",
+    image: "/gallery/bathroom/1.jpg",
   },
   {
     id: 3,
-    category: "Office",
-    image: "https://images.unsplash.com/photo-1493809842364-78817add7ffb",
+    category: "Consoles",
+    image: "/gallery/console/1.jpg",
   },
   {
     id: 4,
-    category: "Living Room",
-    image: "https://images.unsplash.com/photo-1484154218962-a197022b5858",
+    category: "Rooms",
+    image: "/gallery/room/1.jpg",
   },
   {
     id: 5,
-    category: "Bedroom",
-    image: "https://images.unsplash.com/photo-1507089947368-19c1da9775ae",
+    category: "Kitchen",
+    image: "/gallery/kitchen/1.jpg",
   },
   {
     id: 6,
     category: "Office",
-    image: "https://images.unsplash.com/photo-1502005229762-cf1b2da7c5d6",
+    image: "/gallery/office/1.jpg",
+  },
+  {
+    id: 7,
+    category: "Living Room",
+    image: "/gallery/livingroom/2.jpg",
+  },
+  {
+    id: 8,
+    category: "Bathroom",
+    image: "/gallery/bathroom/2.jpg",
+  },
+  {
+    id: 9,
+    category: "Consoles",
+    image: "/gallery/console/2.jpg",
+  },
+  {
+    id: 10,
+    category: "Rooms",
+    image: "/gallery/rooms/2.jpg",
+  },
+  {
+    id: 11,
+    category: "Kitchen",
+    image: "/gallery/kitchen/2.jpg",
+  },
+  {
+    id: 12,
+    category: "Office",
+    image: "/gallery/office/2.jpg",
   },
 ];
 
