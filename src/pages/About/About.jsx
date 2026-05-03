@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Users, Award, Heart, Target } from "lucide-react";
 import CountUp from "../../components/CountUp";
+import MissionVision from "./MissionVission";
 
 const stats = [
   { label: "Projects Completed", value: 120 },
@@ -124,7 +125,7 @@ const About = () => {
           ))}
         </div>
       </section>
-
+      <MissionVision />
       {/* VALUES */}
       <section className="max-w-6xl mx-auto px-6 py-16">
         <h2 className="text-3xl font-bold mb-10 text-center">
