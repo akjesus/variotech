@@ -23,12 +23,12 @@ const projects = [
   {
     id: 4,
     category: "Rooms",
-    image: "/gallery/room/1.jpg",
+    image: "/gallery/rooms/1.jpg",
   },
   {
     id: 5,
     category: "Kitchen",
-    image: "/gallery/kitchen/1.jpg",
+    image: "/gallery/kitchens/1.jpg",
   },
   {
     id: 6,
@@ -58,7 +58,7 @@ const projects = [
   {
     id: 11,
     category: "Kitchen",
-    image: "/gallery/kitchen/2.jpg",
+    image: "/gallery/kitchens/2.jpg",
   },
   {
     id: 12,
