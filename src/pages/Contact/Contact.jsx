@@ -47,7 +47,7 @@ const Contact = () => {
         >
           <Phone className="mx-auto text-yellow-600 mb-4" />
           <h3 className="font-semibold">Phone</h3>
-          <p className="text-gray-600">+234 800 000 0000</p>
+          <p className="text-gray-600">+234 803 326 8446</p>
         </motion.div>
 
         <motion.div
@@ -56,11 +56,11 @@ const Contact = () => {
         >
           <Mail className="mx-auto text-yellow-600 mb-4" />
           <h3 className="font-semibold">Email</h3>
-          <p className="text-gray-600">info@eleganceinteriors.com</p>
+          <p className="text-gray-600">info@variotech.ng</p>
         </motion.div>
 
         <motion.div
-          whileHover={{ scale: 1.05 }}
+          whileHover={{ scale: 1.15 }}
           className="bg-white p-6 rounded-2xl shadow text-center"
         >
           <MapPin className="mx-auto text-yellow-600 mb-4" />
@@ -106,7 +106,7 @@ const Contact = () => {
 
           <button
             type="submit"
-            className="bg-yellow-600 text-white px-6 py-3 rounded-lg flex items-center gap-2 hover:bg-yellow-700"
+            className="bg-[#B34C0D] text-white px-6 py-3 rounded-lg flex items-center gap-2 hover:bg-[#9A3B0C]"
           >
             <Send size={18} /> Send Message
           </button>

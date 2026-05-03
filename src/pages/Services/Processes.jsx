@@ -10,27 +10,27 @@ import {
 const steps = [
   {
     icon: MessageCircle,
-    title: "Consultation",
-    desc: "We start by understanding your vision, needs, and budget.",
+    title: "Problem Definition",
+    desc: "Site Visitation / Customer Brief / Measurements",
   },
   {
     icon: PencilRuler,
-    title: "Concept Design",
-    desc: "We create mood boards, layouts, and design concepts.",
+    title: "Concept Development",
+    desc: "Design and Project Cost Estimation",
   },
   {
     icon: Layout,
-    title: "Planning",
-    desc: "Detailed drawings, materials selection, and timelines.",
+    title: "Assessment of Alternatives",
+    desc: "Redefine Design, Detailed drawings, materials selection, and timelines.",
   },
   {
     icon: Hammer,
-    title: "Execution",
+    title: "Payment and Execution",
     desc: "We bring the design to life with expert craftsmanship.",
   },
   {
     icon: CheckCircle,
-    title: "Final Delivery",
+    title: "Commissioning and Handover",
     desc: "We review, style, and deliver your finished space.",
   },
 ];
@@ -41,10 +41,9 @@ const ProcessSection = () => {
       <div className="max-w-6xl mx-auto px-6">
         {/* HEADER */}
         <div className="text-center mb-16">
-          <h2 className="text-3xl font-bold mb-4">Our Design Process</h2>
+          <h2 className="text-3xl font-bold mb-4">Our Design Methodology</h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            A simple and transparent approach to transforming your space from
-            concept to completion.
+            All our projects are delivered in the following order
           </p>
         </div>
 

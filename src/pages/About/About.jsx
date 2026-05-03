@@ -13,18 +13,23 @@ const stats = [
 const team = [
   {
     name: "Chigozie Okpechi",
-    role: "Lead Project Manager",
-    img: "https://randomuser.me/api/portraits/women/44.jpg",
+    role: "Lead, Project Coordinator",
+    img: "/images/chigozie.jpg",
   },
   {
-    name: "Michael Smith",
-    role: "Architect",
-    img: "https://randomuser.me/api/portraits/men/32.jpg",
+    name: "Obiageri Ahunwa",
+    role: "Head, Client Services",
+    img: "/images/obiageri.jpg",
   },
   {
-    name: "Sarah Johnson",
-    role: "Project Manager",
-    img: "https://randomuser.me/api/portraits/women/68.jpg",
+    name: "Tochukwu Ahunwa",
+    role: "Financial Controller",
+    img: "/images/tochukwu.jpg",
+  },
+  {
+    name: "Abimbola Rotimi",
+    role: "Legal Adviser",
+    img: "/images/abimbola.jpg",
   },
 ];
 
@@ -156,12 +161,15 @@ const About = () => {
           <h2 className="text-3xl font-bold mb-10 text-center">
             Meet Our Team
           </h2>
-
-          <div className="grid md:grid-cols-3 gap-8">
+          <p className="text-gray-600 text-center mb-12">
+            We pride ourselves in the expertise of our team many of whom have
+            garnered years of working experience in leading companies
+          </p>
+          <div className="grid md:grid-cols-4 gap-8">
             {team.map((member, i) => (
               <motion.div
                 key={i}
-                whileHover={{ scale: 1.05 }}
+                whileHover={{ scale: 1.20 }}
                 className="bg-[#F8F5F0] p-6 rounded-2xl text-center shadow"
               >
                 <img

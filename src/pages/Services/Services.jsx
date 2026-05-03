@@ -5,39 +5,39 @@ import ProcessSection from "./Processes";
 
 const services = [
   {
-    title: "Residential Design",
+    title: "Kitchen Design",
     icon: Home,
-    short: "Elegant and personalized home interiors.",
+    short: "Fitted Kitchen, Planning, Design and Implementation.",
     details:
       "We design living spaces tailored to your lifestyle, blending comfort, elegance, and functionality. From bedrooms to full homes, we bring your vision to life.",
   },
   {
-    title: "Commercial Design",
+    title: "Living Room",
     icon: Building2,
-    short: "Modern and functional business environments.",
+    short: "Living Room & Bedroom Design and Arrangement.",
     details:
-      "We create professional spaces that enhance productivity and reflect your brand identity, including offices, retail spaces, and hospitality interiors.",
+      "We design living spaces tailored to your lifestyle, blending comfort, elegance, and functionality. From bedrooms to full homes, we bring your vision to life.",
   },
   {
-    title: "Furniture & Decor",
+    title: "Bathroom and Vanity Design",
     icon: Sofa,
-    short: "Curated furniture and styling solutions.",
+    short: "Bathroom and Vanity Design and Arrangement.",
     details:
-      "From furniture selection to decor styling, we ensure every detail contributes to a cohesive and luxurious design.",
+      "We design functional and stylish bathrooms that maximize space and enhance your daily routine, from modern vanities to spa-like retreats.",
   },
   {
-    title: "Space Planning",
+    title: "Office Planning",
     icon: Ruler,
-    short: "Smart layouts for maximum efficiency.",
+    short: "Office Planning, Setup and Spatial Management.",
     details:
-      "We optimize your space with strategic layouts that improve flow, usability, and aesthetics.",
+      "We create efficient and functional office spaces that support productivity and reflect your brand identity.",
   },
   {
-    title: "Renovation",
+    title: "Closets and Wardrobes",
     icon: Hammer,
-    short: "Transform outdated spaces into modern designs.",
+    short: "Custom Closets and Wardrobe Design.",
     details:
-      "Complete remodeling solutions with attention to detail, quality materials, and expert execution.",
+      "We create custom closet and wardrobe solutions that maximize storage and enhance the aesthetics of your space.",
   },
   {
     title: "Turnkey Solutions",
@@ -70,8 +70,16 @@ const Services = () => {
             transition={{ delay: 0.2 }}
             className="max-w-2xl mx-auto text-gray-300"
           >
-            We design beautiful, functional spaces tailored to your lifestyle
-            and business needs.
+            Our services are geared towards making your space cozy, organised
+            and efficient.
+          </motion.p>
+          <motion.p
+            initial={{ opacity: 0, y: 40 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.2 }}
+            className="max-w-2xl mx-auto text-gray-300"
+          >
+            They Include
           </motion.p>
         </div>
       </section>
@@ -158,13 +166,14 @@ const Services = () => {
         >
           Let’s bring your vision to life with elegance and precision.
         </motion.p>
-
-        <motion.button
-          whileHover={{ scale: 1.05 }}
-          className="bg-yellow-600 px-8 py-3 rounded-lg hover:bg-yellow-700"
-        >
-          Get a Free Consultation
-        </motion.button>
+        <a href="/contact">
+          <motion.button
+            whileHover={{ scale: 1.15 }}
+            className="bg-[#B34C0D] px-8 py-3 rounded-lg hover:bg-yellow-700"
+          >
+            Get a Free Consultation
+          </motion.button>
+        </a>
       </section>
     </div>
   );

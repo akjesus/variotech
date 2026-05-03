@@ -20,6 +20,7 @@ import clsx from "clsx";
 import parse from "html-react-parser";
 import moment from "moment";
 import ExperienceSection from "./Experience";
+import { desc } from "framer-motion/client";
 
 export default function Home() {
   const Navigate = useNavigate();
@@ -40,12 +41,12 @@ export default function Home() {
     },
   ];
   const images = [
-    "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85",
-    "https://images.unsplash.com/photo-1493809842364-78817add7ffb",
-    "https://images.unsplash.com/photo-1493666438817-866a91353ca9",
-    "https://images.unsplash.com/photo-1484154218962-a197022b5858",
-    "https://images.unsplash.com/photo-1507089947368-19c1da9775ae",
-    "https://images.unsplash.com/photo-1502005229762-cf1b2da7c5d6",
+    {image : "/gallery/console/1.jpg", desc: "Console Table Design"},
+    {image : "/gallery/bathroom/1.jpg", desc: "Bathroom Design"},
+    {image : "/gallery/kitchens/1.jpg", desc: "Kitchen Design"},
+    {image : "/gallery/livingroom/1.jpg", desc: "Living Room Design"},
+    {image : "/gallery/console/1.jpg", desc: "Console Table Design"},
+    {image : "/gallery/office/1.jpg", desc: "Office Design"},
   ];
 
   return (
@@ -245,7 +246,9 @@ export default function Home() {
 
       {/* GALLERY */}
       <section className="max-w-6xl mx-auto px-6 py-16">
-        <h2 className="text-3xl font-bold mb-8 text-center">Featured Projects</h2>
+        <h2 className="text-3xl font-bold mb-8 text-center">
+          Featured Projects
+        </h2>
 
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
           {images.map((img, i) => (
@@ -255,10 +258,11 @@ export default function Home() {
               onClick={() => setSelectedImage(img)}
             >
               <img
-                src={img}
-                alt="Solutions"
+                src={img.image}
+                alt={img.desc}
                 className="w-full h-64 object-cover group-hover:scale-110 transition duration-300"
               />
+              <p className="text-center mt-2 text-gray-600">{img.desc}</p>
             </div>
           ))}
         </div>
@@ -275,10 +279,11 @@ export default function Home() {
           </button>
 
           <img
-            src={selectedImage}
+            src={selectedImage.image}
             alt="preview"
             className="max-w-4xl w-full rounded-lg"
           />
+          <p className="text-center mt-2 text-gray-600">{selectedImage.desc}</p>
         </div>
       )}
 
@@ -290,9 +295,11 @@ export default function Home() {
         <p className="mb-6 text-gray-300">
           Let’s create something beautiful together.
         </p>
-        <button className="bg-[#B34C0D] px-8 py-3 rounded-lg hover:bg-[#9A3B0C]">
-          Get in Touch
-        </button>
+        <a href="/contact">
+          <button className="bg-[#B34C0D] px-8 py-3 rounded-lg hover:bg-[#9A3B0C]">
+            Get in Touch
+          </button>
+        </a>
       </section>
     </div>
   );
