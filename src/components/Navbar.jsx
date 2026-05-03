@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { useLocation } from "react-router-dom";
-import TextCarousel from "./TextCarousel";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -108,7 +107,6 @@ export default function Navbar() {
           </nav>
         </div>
       )}
-      <TextCarousel />
     </header>
   );
 }
