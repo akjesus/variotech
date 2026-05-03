@@ -21,6 +21,7 @@ import parse from "html-react-parser";
 import moment from "moment";
 import ExperienceSection from "./Experience";
 import { desc } from "framer-motion/client";
+import ImageSlider from "./Slider";
 
 export default function Home() {
   const Navigate = useNavigate();
@@ -68,7 +69,7 @@ export default function Home() {
               It's not just a space, it's an experience
             </motion.h1>
             <p className="mb-6 text-lg">
-              Luxury Solutions design for homes and businesses.
+              Designed with your home and office in mind
             </p>
             <div className="flex gap-4">
               <a href="/portfolio">
@@ -86,140 +87,12 @@ export default function Home() {
         </div>
       </section>
       <ExperienceSection />
-      <section className="relative bg-[#330202] text-white">
-        <div id="default-carousel" class="relative " data-carousel="slide">
-          <div class="relative h-96 overflow-hidden rounded-base md:h-96">
-            <div class="hidden duration-700 ease-in-out" data-carousel-item>
-              <img
-                src="/slider/1.jpg"
-                class="absolute block -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-                alt="..."
-              />
-            </div>
+      <section className="py-16">
+        <h2 className="text-3xl font-bold text-center mb-8">
+          Our Work Highlights
+        </h2>
 
-            <div class="hidden duration-700 ease-in-out" data-carousel-item>
-              <img
-                src="/slider/2.jpg"
-                class="absolute block -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-                alt="..."
-              />
-            </div>
-
-            <div class="hidden duration-700 ease-in-out" data-carousel-item>
-              <img
-                src="/slider/3.jpg"
-                class="absolute block  -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-                alt="..."
-              />
-            </div>
-
-            <div class="hidden duration-700 ease-in-out" data-carousel-item>
-              <img
-                src="/slider/4.jpg"
-                class="absolute block  -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-                alt="..."
-              />
-            </div>
-
-            <div class="hidden duration-700 ease-in-out" data-carousel-item>
-              <img
-                src="/slider/5.jpg"
-                class="absolute block  -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-                alt="..."
-              />
-            </div>
-          </div>
-
-          <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
-            <button
-              type="button"
-              class="w-3 h-3 rounded-base"
-              aria-current="true"
-              aria-label="Slide 1"
-              data-carousel-slide-to="0"
-            ></button>
-            <button
-              type="button"
-              class="w-3 h-3 rounded-base"
-              aria-current="false"
-              aria-label="Slide 2"
-              data-carousel-slide-to="1"
-            ></button>
-            <button
-              type="button"
-              class="w-3 h-3 rounded-base"
-              aria-current="false"
-              aria-label="Slide 3"
-              data-carousel-slide-to="2"
-            ></button>
-            <button
-              type="button"
-              class="w-3 h-3 rounded-base"
-              aria-current="false"
-              aria-label="Slide 4"
-              data-carousel-slide-to="3"
-            ></button>
-            <button
-              type="button"
-              class="w-3 h-3 rounded-base"
-              aria-current="false"
-              aria-label="Slide 5"
-              data-carousel-slide-to="4"
-            ></button>
-          </div>
-          <button
-            type="button"
-            class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-            data-carousel-prev
-          >
-            <span class="inline-flex items-center justify-center w-10 h-10 rounded-base bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-              <svg
-                class="w-5 h-5 text-white rtl:rotate-180"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                fill="none"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="m15 19-7-7 7-7"
-                />
-              </svg>
-              <span class="sr-only">Previous</span>
-            </span>
-          </button>
-          <button
-            type="button"
-            class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-            data-carousel-next
-          >
-            <span class="inline-flex items-center justify-center w-10 h-10 rounded-base bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-              <svg
-                class="w-5 h-5 text-white rtl:rotate-180"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                fill="none"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="m9 5 7 7-7 7"
-                />
-              </svg>
-              <span class="sr-only">Next</span>
-            </span>
-          </button>
-        </div>
+        <ImageSlider />
       </section>
       {/* About Section */}
       <section id="about" className="py-20 bg-gray-50">
