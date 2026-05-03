@@ -65,7 +65,7 @@ export default function Home() {
               animate={{ opacity: 1, y: 0 }}
               className="text-4xl md:text-5xl font-bold mb-4"
             >
-              Transforming Spaces into Masterpieces
+              It's not just a space, it's an experience
             </motion.h1>
             <p className="mb-6 text-lg">
               Luxury Solutions design for homes and businesses.

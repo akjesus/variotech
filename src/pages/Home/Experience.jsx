@@ -20,13 +20,15 @@ const ExperienceSection = () => {
           viewport={{ once: true }}
         >
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-[#330202]">
-            Several Years of Experience in Interior Design
+            A blend of artistry and performance distilled over decades
           </h2>
 
           <p className="text-gray-600 mb-6 leading-relaxed">
-            With a deep passion for design and years of hands-on experience, we
-            specialize in transforming ordinary spaces into luxurious,
-            functional environments that reflect your unique personality.
+            Driven by a passion for excellence and refined design, we transform
+            ordinary spaces into elegant, functional interiors that reflect
+            class, sophistication, and individuality. Every detail is
+            thoughtfully curated to create timeless environments defined by
+            luxury, comfort, and exceptional craftsmanship.
           </p>
 
           {/* FEATURES */}

@@ -65,6 +65,36 @@ const projects = [
     category: "Office",
     image: "/gallery/office/2.jpg",
   },
+  {
+    id: 13,
+    category: "Living Room",
+    image: "/gallery/livingroom/3.jpg",
+  },
+  {
+    id: 14,
+    category: "Bathroom",
+    image: "/gallery/bathroom/3.jpg",
+  },
+  {
+    id: 15,
+    category: "Consoles",
+    image: "/gallery/console/3.jpg",
+  },
+  {
+    id: 16,
+    category: "Rooms",
+    image: "/gallery/rooms/3.jpg",
+  },
+  {
+    id: 17,
+    category: "Kitchen",
+    image: "/gallery/kitchens/3.jpg",
+  },
+  {
+    id: 18,
+    category: "Office",
+    image: "/gallery/office/3.jpg",
+  },
 ];
 
 const Portfolio = () => {
@@ -96,17 +126,19 @@ const Portfolio = () => {
   return (
     <div className="bg-[#F8F5F0] text-gray-800">
       {/* HERO */}
-      <section className="py-20 bg-black text-white text-center">
-        <motion.h1
-          initial={{ opacity: 0, y: 40 }}
-          animate={{ opacity: 1, y: 0 }}
-          className="text-5xl font-bold mb-4"
-        >
-          Our Portfolio
-        </motion.h1>
-        <p className="text-gray-300 max-w-xl mx-auto">
-          A curated showcase of our finest interior design work.
-        </p>
+      <section className="relative bg-[#330202] text-white py-24">
+        <div className="max-w-7xl mx-auto px-6 text-center">
+          <motion.h1
+            initial={{ opacity: 0, y: 40 }}
+            animate={{ opacity: 1, y: 0 }}
+            className="text-5xl font-bold mb-4"
+          >
+            Our Portfolio
+          </motion.h1>
+          <p className="text-gray-300 max-w-xl mx-auto">
+            A curated showcase of our finest interior design work.
+          </p>
+        </div>
       </section>
 
       {/* FILTER */}
