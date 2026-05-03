@@ -4,11 +4,13 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-8 text-center md:text-left">
         <div className="flex flex-col items-center md:items-start">
           <div className="flex items-center space-x-2">
-            <img
-              src="/logo.png"
-              alt="logo"
-              className="w-30 h-10 object-cover rounded-full"
-            />
+            <a href="/">
+              <img
+                src="/logo.png"
+                alt="logo"
+                className="w-30 h-10 object-cover rounded-full"
+              />
+            </a>
           </div>
           <p className="mt-3 text-white">
             Creating spaces that inspire and elevate the human experience.

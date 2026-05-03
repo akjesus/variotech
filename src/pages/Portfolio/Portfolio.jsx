@@ -228,9 +228,11 @@ const Portfolio = () => {
         <p className="text-gray-300 mb-6">
           Inspired by our work? Let’s bring your vision to life.
         </p>
-        <button className="bg-yellow-600 px-8 py-3 rounded-lg hover:bg-yellow-700">
-          Start Your Project
-        </button>
+        <a href="/contact">
+          <button className="bg-yellow-600 px-8 py-3 rounded-lg hover:bg-yellow-700">
+            Start Your Project
+          </button>
+        </a>
       </section>
     </div>
   );
