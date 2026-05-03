@@ -91,7 +91,7 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden bg-[#330202] shadow-md">
+        <div className="md:hidden bg-black shadow-md">
           <nav className="grid grid-cols-2 gap-4 p-4">
             {navLinks.map((link) => (
               <a
